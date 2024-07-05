@@ -7,7 +7,7 @@ const route=require('./route/people')
 
 mongoose
   .connect(
-    "mongodb+srv://rk9190743:vmv04p6rr313xhKp@backenddb.ru9xtiw.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB"
+  "mongodb+srv://rk9190743:<password>@backenddb.ru9xtiw.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB"
   )
   .then(() => {
     console.log("Connected To database");
@@ -16,7 +16,6 @@ mongoose
     console.log("Didn't able to Connect");
   });
 
-  // mongodb+srv://rk9190743:<password>@backenddb.ru9xtiw.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB
 
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
